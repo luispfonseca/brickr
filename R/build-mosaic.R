@@ -42,7 +42,7 @@ build_mosaic <- function(brick_obj, title=NULL){
     geom_brick_rect(ggplot2::aes(fill = Lego_color), color = "#333333",
                     use_bricks = use_bricks)+
     ggplot2::scale_fill_identity() + 
-    ggplot2::coord_fixed(expand = 0.5) 
+    ggplot2::coord_fixed(expand = TRUE) 
   
   img <- img +
     ggplot2::labs(title = title) +
